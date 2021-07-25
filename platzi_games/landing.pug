@@ -1,4 +1,5 @@
 -var titulo = "Titulo Principal"
+-var titulos = ["Titulo Principal", "Subtitlu 1", "Subtitlu 2", "Subtitlu 3",  ]
 doctype html
 html(lang="en")
     head
@@ -14,7 +15,8 @@ html(lang="en")
             .intro__img: img(src="images/imagen.png", alt="")
             .intro__content
                 //- h2= titulo #{titulo} formas de mandar a llamar una variable
-                h2 #{titulo} 
+                //- h2 #{titulos[0] [1]} el cero indica la posicion de la variable el segundo numero indica el numero de elemento de esa variable
+                h2 #{titulos[0]} 
                 p 
                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                 span Enim veniam consequuntur illum, quaerat voluptas eaque nihil fuga similique.
