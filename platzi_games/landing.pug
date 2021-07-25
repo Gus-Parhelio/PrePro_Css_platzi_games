@@ -1,6 +1,12 @@
 -var titulo = "Titulo Principal"
--var titulos = ["Titulo Principal", "Subtitlu 1", "Subtitlu 2", "Subtitlu 3",  ]
+-var titulos = ["Titulo Principal", "Subtitulo 1", "Subtitulo 2", "Subtitulo 3",  ]
 -var usuario = "David"
+mixin caja(imagen,titulo,contenido)
+    .caja 
+            .caja__imagen: img(src="images/"+imagen, alt="")
+            .caja__contenido
+                h3=titulo
+                p=contenido 
 doctype html
 html(lang="en")
     head
@@ -11,13 +17,13 @@ html(lang="en")
     body
         header
             h1 PlatziGames
-            if usuario 
-                a(href="#") Hola!! #{usuario}
-            else 
-                a.boton(href="#") Registro 
+            //- if usuario 
+            //-     a(href="#") Hola!! #{usuario}
+            //- else 
+            a.boton(href="#") Registrarse  
         section.intro 
-            .intro__img: img(src="images/imagen.png", alt="")
-            .intro__content
+            .intro__imgagen: img(src="images/imagen.png", alt="")
+            .intro__contenido
                 //- h2= titulo #{titulo} formas de mandar a llamar una variable
                 //- h2 #{titulos[0] [1]} el cero indica la posicion de la variable el segundo numero indica el numero de elemento de esa variable
                 h2 #{titulos[0]} 
@@ -26,7 +32,11 @@ html(lang="en")
                 span Enim veniam consequuntur illum, quaerat voluptas eaque nihil fuga similique.
                 a.boton(href="#") Leer Mas 
 
-        ul 
-            each titulo in titulos  
-                li
-                    a(href="#")=titulo
+        //- ul 
+        //-     each titulo in titulos  
+        //-         li
+        //-             a(href="#")=titulo
+        main.contenido 
+            +caja('imagen.png',titulos[1],'Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+            +caja('imagen.png',titulos[2],'Lorem ipsum dolor sit amet, consectetur adipisicing elit.') 
+            +caja('imagen.png',titulos[3],'Lorem ipsum dolor sit amet, consectetur adipisicing elit.') 
