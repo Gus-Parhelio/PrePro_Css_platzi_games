@@ -1,14 +1,13 @@
-extend componentes/platilla.pug
-block contenidos
+extend componentes/plantilla.pug 
+block contenidos 
         section.intro 
             .intro__imagen: img(src="images/imagen.png", alt="")
             .intro__contenido
                 //- h2= titulo #{titulo} formas de mandar a llamar una variable
                 //- h2 #{titulos[0] [1]} el cero indica la posicion de la variable el segundo numero indica el numero de elemento de esa variable
                 h2 #{titulos[0]} 
-                p 
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                span Enim veniam consequuntur illum, quaerat voluptas eaque nihil fuga similique.
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    span Enim veniam consequuntur illum, quaerat voluptas eaque nihil fuga similique.
                 a.boton(href="#") Leer Mas 
 
         //- ul 

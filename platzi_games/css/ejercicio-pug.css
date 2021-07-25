@@ -1,7 +1,17 @@
+/*
+1- posicionamiento
+2- Modelo caja (Box model)
+3- Tipografia
+4- Visuales (efectos visuales border radius etc)
+5- otros  
+*/ 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Oswald:300,400,500,600,700&display=swap');
 
 * {
 	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
 }
 
 body {
@@ -116,6 +126,40 @@ header a {
 	padding: 20px;
 }
 
+.menu{
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+.menu__list{
+	width: 40%;
+	min-height: 500px;
+	padding: 50px 50px 50px 80px;
+	background-color: rgb(223, 233, 241);
+}
+.menu__list ul{
+	font-size: 1.4rem;
+	list-style: none;
+	padding: 0;
+	line-height: 50px;
+	font-weight: bold;
+	color: rgb(24, 116, 190);
+	font-family: 'Lato';
+	text-transform: uppercase;
+	
+}
+.list--boton{
+	text-decoration: none;
+}
+
+.menu__intro{
+	padding: 50px;
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+.menu__intro p{
+	margin-bottom: 30px;
+}
 footer ul {
 	margin-left: auto;
 	display: flex;

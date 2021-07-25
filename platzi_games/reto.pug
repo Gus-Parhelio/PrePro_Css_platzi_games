@@ -1,0 +1,14 @@
+extend componentes/plantilla.pug 
+block contenidos
+    section.menu
+        .menu__list
+            h2 #{titulos[4]}
+            ul 
+                each menu in menus 
+                     li
+                        a.list--boton(href="#")=menu  
+        .menu__intro 
+            h2 #{titulos[0]} 
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis at quasi inventore pariatur nisi corrupti est itaque blanditiis hic provident nobis exercitationem quo non minus, quis similique. Nihil, accusamus sint.
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero ut, minus exercitationem commodi perferendis. Exercitationem dignissimos repudiandae cum sequi! Voluptate nulla ducimus facilis voluptas tenetur. Blanditiis, modi officiis? Non?
+            a.boton(href="#") Ver Mas
