@@ -1,28 +1,7 @@
--var titulo = "Titulo Principal"
--var titulos = ["Titulo Principal", "Subtitulo 1", "Subtitulo 2", "Subtitulo 3",  ]
--var usuario = "David"
-mixin caja(imagen,titulo,contenido)
-    .caja 
-            .caja__imagen: img(src="images/"+imagen, alt="")
-            .caja__contenido
-                h3=titulo
-                p=contenido 
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        title Document
-        link(rel="stylesheet", href="css/ejercicio-pug.css")
-    body
-        header
-            h1 PlatziGames
-            //- if usuario 
-            //-     a(href="#") Hola!! #{usuario}
-            //- else 
-            a.boton(href="#") Registrarse  
+extend componentes/platilla.pug
+block contenidos
         section.intro 
-            .intro__imgagen: img(src="images/imagen.png", alt="")
+            .intro__imagen: img(src="images/imagen.png", alt="")
             .intro__contenido
                 //- h2= titulo #{titulo} formas de mandar a llamar una variable
                 //- h2 #{titulos[0] [1]} el cero indica la posicion de la variable el segundo numero indica el numero de elemento de esa variable
