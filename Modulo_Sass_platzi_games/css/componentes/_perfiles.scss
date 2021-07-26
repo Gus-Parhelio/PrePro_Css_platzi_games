@@ -1,5 +1,5 @@
 .perfil{
-    width: 50%;
+    width: 60%;
     padding-top: 50px;
     color: $color-claro;
     background-color: $color-secundario;
@@ -34,7 +34,7 @@
         text-decoration: none;
         text-align: center;
         color: $color-claro;
-        @include titulos($fuente2)
+        @include titulos($fuente2);
         background-color: get-opacity($color-primario, .20);
         border: 2px solid get-opacity($color-claro, .30);
     }
