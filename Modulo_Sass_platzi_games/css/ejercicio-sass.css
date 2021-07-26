@@ -1,3 +1,18 @@
+h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -81,14 +96,14 @@ main {
   font-weight: 600;
   font-size: 20px;
   text-align: center;
-  text-transform: uppercase;
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
 .estadistica--perfil span {
   font-size: 12px;
   text-align: center;
-  text-transform: uppercase;
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
 
 .ubicacion--perfil {
@@ -147,10 +162,10 @@ main {
 }
 .galeria h2 {
   margin-bottom: 10px;
-  text-transform: uppercase;
   font-weight: 600;
   font-size: 20px;
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
 .galeria img {
   border-radius: 10px;
