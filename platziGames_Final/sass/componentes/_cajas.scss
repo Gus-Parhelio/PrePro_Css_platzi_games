@@ -1,5 +1,6 @@
 .contenedor--cajas {
 	max-width: 1400px;
+	min-height: 350px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-evenly;
@@ -45,7 +46,7 @@
 		max-height: auto;
 		position: absolute;
 		opacity: .5;
-		object-fit: contain;
+		object-fit: cover;
 	}
 	&__contenido{
 		padding: 20px;
@@ -73,25 +74,62 @@
 }
 
 .caja--grande{
+	min-width: 350px;
+	max-width: 400px;
+	height: 428px;
+	margin-bottom: 20px;
+	@include media(desktop-s){
 	max-width: 1000px;
 	height: 550px;
 	margin-right: 20px;
-	margin-bottom: 20px;
+	}
+	
 	h2{
 		@include titulos($Fuente2);	
-		@include font-size(50px);
+		@include font-size(25px);
+		
+		@include media(desktop-s){
+			@include font-size(50px);
+		}
+
 	}
+	p{
+		@include font-size(13px);
+		padding-top: 10px;
+		@include media(desktop-s){
+			@include font-size(20px);
+		}
+	}
+
+
 	.caja--con-fondo__contenido{
-		padding-top: 200px;
+
+		padding-top: 170px;
+		
+		@include media(desktop-s){
+			padding-top: 200px;
+		}
 	}
 }
 
 .caja--mediana{
+	min-width: 350px;
+	height: 250px;
+	margin: 10px 0px;
+
+	@include media(desktop-s){ 
 	max-width: 600px;
 	height: 250px;
+	margin: 0;
+	}
 }
 
 .caja--pequena{
-	max-width: 300px;
+	min-width: 300px;
 	height: 250px;
+	margin-top: 10px;
+	@include media(desktop-s){
+		max-width: 300px;
+		margin-top: 0px;
+	}
 }

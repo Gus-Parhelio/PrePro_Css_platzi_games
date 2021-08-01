@@ -6,7 +6,7 @@
 	background-color: $color-primario;
 }
 .nav--footer ul{
-	display: flex;
+	display: none;
 	padding-top: 35px;
 	
 	li{
@@ -16,6 +16,9 @@
 	a{
 		color: $color-claro;
 		@include titulos($Fuente2);
+	}
+	@include media(desktop-s){
+		display: flex;
 	}
 }
 

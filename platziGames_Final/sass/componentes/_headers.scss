@@ -18,9 +18,11 @@
 		color: $color-variacion;
 		@include titulos($Fuente2)
 	}
+
 	@include media(desktop-s){
 		display: flex;
 	}
+	
 }
 
 .header__busqueda{
